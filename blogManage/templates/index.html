@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试博客</title>
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/custom/custom.css"/>
+</head>
+<body>
+     <div class="blogTitle">
+         <div class="blogLogo"></div>
+     </div>
+{% for blog in blog %}
+    <h2>{{ blog.title }}</h2>
+{% endfor%}
+
+</body>
+</html>
